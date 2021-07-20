@@ -1,7 +1,15 @@
 body{
+<<<<<<< HEAD
     background-image: url("../background.jpg");
 }
 p {
     color: red;
     font-size: 40px;
+=======
+    background: linear-gradient(300.5deg, #86DE77 12.84%, #FFFFFF 96.88%);
+}
+.title{
+    font-size: 3rem;
+    color: black;
+>>>>>>> master
 }
