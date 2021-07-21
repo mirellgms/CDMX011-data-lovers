@@ -1,7 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    align-content: center;
+   }
 body{
-    background-image: url("../background.jpg");
+    background-image: url("../atle2.png");
+    justify-content: center;
 }
 p {
     color: red;
     font-size: 40px
 }
+.menu{
+  display: flex;
+  margin: auto;
+}
+.item{
+  width: 700px;
+  height: 30px;
+  color: #076F8F;
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 23px;
+  background-color: white;
+  border: white;
+}
+img#Atletas{
+  width: 100%;
+  height: 900px;
+  display: flex;
+}
+.banner{
+    width: 100%;
+    height: 75px;
+    display: flex;
+}
+img#Logo{
+  width: 88.98px;
+  height: 75px;
+}
+
+.inicio{
+    display: flex;
+    margin-left: 25%;
+    margin-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 59px;
+    letter-spacing: 0.015em;
+    color: #C1FB77;
+    width: 852px;
+    height: 423px;
+    background: rgba(11, 93, 190, 0.71);
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+.ok{
+    display: flex;
+    margin-left: 40%;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 48px;
+    align-items: center;
+    text-align: center;
+    background: rgba(178, 240, 46, 0.87);
+    border: 5px solid #0D5FDB;
+    border-radius: 10px;
+    width:300px;
+    height: 110px;
+}
+/*font-family: 'Quicksand', sans-serif;*/
