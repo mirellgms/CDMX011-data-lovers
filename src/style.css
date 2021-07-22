@@ -1,7 +1,8 @@
 *{
     margin: 0px;
     padding: 0px;
-    align-content: center;
+    justify-content: center;
+
    }
 body{
     background-image: url("../atle2.png");
