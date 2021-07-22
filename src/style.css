@@ -1,9 +1,9 @@
 *{
     margin: 0px;
     padding: 0px;
+     align-content: center;
     justify-content: center;
-
-   }
+}
 body{
     background-image: url("../atle2.png");
     justify-content: center;
@@ -57,6 +57,10 @@ img#Logo{
     align-items: center;
     text-align: center;
 }
+
+/*.central{
+    
+}*/
 .ok{
     display: flex;
     margin-left: 40%;
