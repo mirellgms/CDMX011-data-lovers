@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no, maximum-scale=1.0,minimum-scale=1.0">
     <title>Juegos Olímpicos Río 2016</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,16 +12,172 @@
   </head>
   <body>
    <section class="banner"><img src="LogoRio.png" id="Logo" alt="Logo"><img src="baner.png" class="banner" alt="banner"></section> 
-    <nav class="menu">
+   
+   <nav class="menu">
+    <div class="atletas">
+      <button class="atletasbtn">Atletas</button>
+        <div class="atletas-content">
+          <a href="#">Nombre</a>
+          <a href="#">Edad</a>
+          <a href="#">Género</a>
+          <a href="#">Altura</a>
+          <a href="#">Peso</a>
+        </div>
+    </div>
+
+    <div class="atletas">
+      <button class="atletasbtn">Países</button>
+      <div class="atletas-content">
+        <a href="#">Asia</a>
+        <a href="#">África</a>
+        <a href="#">Europa</a>
+        <a href="#">Oceania</a>
+        <a href="#">Sudamérica</a>
+        <a href="#">Norteamérica</a>
+        <a href="#">Centroamérica</a>
+      </div>
+    </div>
+
+    <div class="atletas">
+      <button class="atletasbtn">Deportes</button>
+      <div class="atletas-content">
+        <a href="">Olímpicos</a>
+          <a href="">De Invierno</a>
+          <a href="">De La Juventud</a>
+          <a href="">Paralímpicos</a>
+      </div>
+    </div>
+
+    <div class="atletas">
+      <button class="atletasbtn">Medallas</button>
+      <div class="atletas-content">
+        <a href="">Oro</a>
+        <a href="">Plata</a>
+        <a href="">Bronce</a>  
+      </div>
+    </div>
+  </nav>  
+
+    <!--  
+			
+        <ul>
+          <a href="">Olímpicos</a>
+          <a href="">De Invierno</a>
+          <a href="">De La Juventud</a>
+          <a href="">Paralímpicos</a>
+        </ul>
+      <li><a href="#">Medallas</a></li>
+        <ul>
+          <li><a href="">Oro</a></li>
+          <li><a href="">Plata</a></li>
+          <li><a href="">Bronce</a></li>
+        </ul>
+      <li><a href="#">Datos curiosos</a></li>
       <button class="item">ATLETAS</button> 
       <button class="item">PAISES</button>
       <button class="item">DEPORTES</button>
       <button class="item">MEDALLAS</button>
       <button class="item">DATOS CURIOSOS</button>
-    </nav>
-   <section class="central" > 
-     <nav class="inicio">CONOCE MÁS ACERCA DE LOS ATLETAS OLÍMPICOS DE RÍO 2016</nav>
-     <br><button class="ok">VER MÁS</button>
+      -->
+    
+   <section class="central" id="central" style="display:block;" > 
+     <nav class="inicio">CONOCE QUE PAÍSES PARTICIPARON EN LOS JUEGOS OLÍMPICOS RÍO 2016</nav>
+     <br><button class="ok" id= "btn">VER MÁS</button>
+   </section>
+
+   <section class= "filter" id="filter" style= "display:none;">
+     <label class= "label" id= "label" >
+       <select name="country" id="country">
+        <option>Seleccionar país</option> 
+        <option>Algeria</option>
+        <option>Argentina</option>
+        <option>Armenia</option>
+        <option>Armenia</option>
+        <option>Australia</option>
+        <option>Austria</option>
+        <option>Azerbaijan</option>
+        <option>Bahamas</option>
+        <option>Brazil</option>
+        <option>Bulgaria</option>
+        <option>Burundi</option>
+        <option>Canada</option>
+        <option>Chinese Taipei</option>
+        <option>China</option>
+        <option>Colombia</option>
+        <option>Croatia</option>
+        <option>Cuba</option>
+        <option>Czech Republic</option>
+        <option>Colombia</option>
+        <option>Costa de Marfil</option>
+        <option>Croacia</option>
+        <option>Cuba</option>
+        <option>Denmark</option>
+        <option>Dominican Republic</option>
+        <option>Egypt</option>
+        <option>Estonia</option>
+        <option>Ethiopia</option>
+        <option>Fiji</option>
+        <option>Finland</option>
+        <option>France</option>
+        <option>Georgia</option>
+        <option>Germany</option>
+        <option>Great Britain</option>
+        <option>Greece</option>
+        <option>Grenada></option>
+        <option>Hungary</option>
+        <option>Individual Olympic Athletes</option>
+        <option>India</option>
+        <option>Indonesia</option>
+        <option>Ireland</option>
+        <option>Iran</option>
+        <option>Israel</option>
+        <option>Italy</option>
+        <option>Cote d'Ivoire</option>
+        <option>Jamaica</option>
+        <option>Japan</option>
+        <option>Jordan</option>
+        <option>Kazakhstan</option>
+        <option>Kenya</option>
+        <option>Kosovo</option>
+        <option>Lithuania</option>
+        <option>Malaysia</option>
+        <option>Mexico</option>
+        <option>Mongolia</option>
+        <option>Morocco</option>
+        <option>Netherlands</option>
+        <option>NewZealand </option>
+        <option>Niger</option>
+        <option>Nigeria</option>
+        <option>North Korea</option>
+        <option>Norway</option>
+        <option>Philippines</option>
+        <option>Poland</option>
+        <option>Portugal</option>
+        <option>Puerto Rico</option>
+        <option>Qatar</option>
+        <option>Romania</option>
+        <option>Russia</option>
+        <option>Serbia</option>
+        <option>Sinapure</option>
+        <option>Slovakia</option>       
+        <option>Slovenia</option>
+        <option>South Africa</option>
+        <option>Spain</option>
+        <option>Sweden</option>
+        <option>Switzerland</option>
+        <option>Tajikistan</option>
+        <option>Thailand</option>
+        <option>Trinidad and Tobago</option>
+        <option>Tunisia</option>
+        <option>Turkey</option>
+        <option>Ukraine</option>
+        <option>United Arab Emirates</option>
+        <option>United States</option>
+        <option>Uzbekistan</option>
+        <option>Venezuela</option>
+        <option>Vietnam</option>
+       </select>
+     </label>
    </section>
 
     <div id="root"></div>
