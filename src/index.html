@@ -35,33 +35,30 @@
     </div>
 
     <div class="atletas">
-      <button class="atletasbtn">PAISES CON MEDALLA</button>
+      <button role="link" onclick="window.location='./paises.html' " class="atletasbtn">PAISES CON MEDALLA</button>
+      <div class="atletas-content"></div>
+
+    </div>
+
+    <div class="atletas">
+      <button role="link" onclick="window.location='./deportes.html' " class="atletasbtn">DEPORTES OLIMPICOS</button>
       <div class="atletas-content"></div>
     </div>
 
     <div class="atletas">
-      <button class="atletasbtn">DEPORTES OLIMPICOS</button>
-      <div class="atletas-content"></div>
-    </div>
-
-    <div class="atletas">
-      <button class="atletasbtn">MUJERES DE ORO</button>
+      <button role="link" onclick="window.location='./mujeres.html' " class="atletasbtn">MUJERES DE ORO</button>
       <div class="atletas-content"></div>
     </div>
   </nav>
 
 
 
-  <section class="central" id="central" style="display:block;">
-    <nav class="inicio">CONOCE QUE PAÍSES PARTICIPARON EN LOS JUEGOS OLÍMPICOS RÍO 2016</nav>
-    <br><button class="ok" id="btn">VER MÁS</button>
-  </section>
-  <img src="./atle2.png" alt="">
-  <section class="filter" id="filter" style="display:none;">
+  <section class="central" id="central">
 
     <form action="">
-      <label for="country" id="label">Selecciona el país</label>
-      <select name="country" id="country">
+      <label for="country" id="label"></label>
+
+      <select name="country" class="country">
         <option>Algeria</option>
         <option>Argentina</option>
         <option>Armenia</option>
@@ -149,43 +146,16 @@
         <option>Venezuela</option>
         <option>Vietnam</option>
       </select>
-      <br><br>
-      <input type="button" value="Filtrar" id="">
     </form>
-  
 
-  <table style="width:100%">
-    <tr>
-      <th>Atleta</th>
-      <th>Noc</th>
-      <th>Edad</th>
-      <th>Evento</th>
-      <th>Medalla</th>
-    </tr>
-    <tr>
-      <td>Pedro</td>
-      <td>Francia</td>
-      <td>50</td>
-      <td>Natación</td>
-      <td>Oro</td>
-    </tr>
-    <tr>
-      <td>María</td>
-      <td>Alemania</td>
-      <td>30</td>
-      <td>Gimnasia</td>
-      <td>Plata</td>
-    </tr>
-    <tr>
-      <td>Lulu</td>
-      <td>Francia</td>
-      <td>50</td>
-      <td>Natación</td>
-      <td>Bronce</td>
-    </tr>
-  </table>
-</section>
-  <!--<p id="show" class="show" style="display:none;"></p>-->
+
+
+  </section>
+
+
+
+
+  <div class="resultado"></div>
 
   <div id="root"></div>
   <script src="main.js" type="module"></script>
