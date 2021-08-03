@@ -1,7 +1,5 @@
 import data from './data/athletes/athletes.js';
-export function olimpics(gold){
-  return gold;
-}
+ 
 export const names = data.athletes
   names.sort((a,b) => {
   if(a.name > b.name){
@@ -11,7 +9,7 @@ export const names = data.athletes
   }
     return 0;
 });
-/*export function golden(){
+/*export function filterByMedall(){
     let medalData= names.filter(function(atlet){
    if(atlet.medal== "Gold"){
      return atlet;
@@ -19,13 +17,14 @@ export const names = data.athletes
   })
  return medalData;
 }*/
-export function teams (countries){
-  let countryData= names.filter(function(team){
- if(team.team== countries){
-   return team;
- }
-})
-return countryData;
+
+export function filterByTeam(countries) {
+  let dataByTeam = data.athletes.filter(function (team) {
+    if (team.team == countries) {
+      return team;
+    }
+  })
+  return dataByTeam;
 }
 
 
