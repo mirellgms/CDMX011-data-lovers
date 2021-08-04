@@ -5,39 +5,40 @@
     justify-content: center;
    }
 body{
-    background-image: url("../atle2.png");
+    background: linear-gradient(270.09deg, rgba(107, 20, 137, 0.88) 2.01%, rgba(125, 10, 141, 0.88) 15.32%, rgba(153, 7, 95, 0.88) 28.74%, rgba(142, 11, 90, 0.88) 38.02%, rgba(132, 12, 95, 0.88) 50.56%, rgba(86, 5, 124, 0.88) 71.56%, rgba(101, 30, 126, 0.88) 81.66%, rgba(59, 6, 68, 0.88) 102.52%);
     justify-content: center;
-    
 }
-p {
-    color: red;
-    font-size: 40px
+.banner{
+  width: 100%;
+  height: 65%;
+  display: flex;
 }
 .menu{
   display: flex;
+  flex-wrap: nowrap;
   margin: auto;
 }
 .atletasbtn {
   background-color: white;
-  color: #B2F02E;
+  color: #B0005B;
   padding: 16px;
-  font-size: 26px;
-  font-family: 'Kodchasan', sans-serif;
+  font-size: 20px;
+  font-family: 'Aclonica', sans-serif;
   border: none;
   width: 500px;
   max-width: 700px;
 }
-
 .atletas {
   position: relative;
   display: inline-block;
+  width: 25%;
 }
 
 .atletas-content {
   display: none;
   position: absolute;
   background-color: white;
-  min-width: 160px;
+  width: 100%;
   box-shadow: 0px 8px 16px 0px hsl(240deg 8% 93%);
   z-index: 1;
 }
@@ -46,6 +47,7 @@ p {
   color: #076F8F;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
+  min-width: 160px;
   text-align: center;
   padding: 12px 16px;
   text-decoration: none;
@@ -61,71 +63,15 @@ p {
 }
 
 .atletas:hover .atletasbtn {
-  background-color: #3e8e41;
+  background-color: #8BF3A2;
 }
-
-.item{
-  width: 700px;
-  height: 30px;
-  color: #076F8F;
-  font-family: 'Kodchasan', sans-serif;
-  font-size: 23px;
-  background-color: white;
-  border: white;
+.presentation{
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 20px;
+  color: #FDFB5D;
 }
-img#Atletas{
-  width: 100%;
-  height: 900px;
-  display: flex;
-}
-.banner{
-    width: 100%;
-    height: 75px;
-    display: flex;
-}
-img#Logo{
-  width: 88.98px;
-  height: 75px;
-}
-
-.inicio{
-    display: flex;
-    margin-left: 25%;
-    margin-top: 5%;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 59px;
-    letter-spacing: 0.015em;
-    color: #C1FB77;
-    width: 852px;
-    height: 423px;
-    background: rgba(11, 93, 190, 0.71);
-    border-radius: 20px;
-    align-items: center;
-    text-align: center;
-}
-
-/*.central{
-    
-}*/
-.ok{
-    display: flex;
-    margin-left: 40%;
-    align-content: center;
-    justify-content: center;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 48px;
-    align-items: center;
-    text-align: center;
-    background: rgba(178, 240, 46, 0.87);
-    border: 5px solid #0D5FDB;
-    border-radius: 10px;
-    width:300px;
-    height: 110px;
-}
-#country{
-  font-family: 'Kodchasan', sans-serif;
+#countries{
+  font-family: 'Aldrich', sans-serif;  
   color:#076F8F;
   font-size: 27px;
   background: #B2F02E;
@@ -137,10 +83,25 @@ img#Logo{
   top: 181px;
   margin: 15px;
 }
-#root{
-  font-family: 'Quicksand', sans-serif; 
-  color: black;
-  background: #ddd;
-
+.card{
+  width: 330px;
+  height: 220px;
+  background: rgba(15, 103, 206, 0.7);
+  border-radius: 10px;  
+  margin: 5px;
+  text-align: center;
 }
-/*font-family: 'Quicksand', sans-serif;*/
+#root{
+  width: 100%;
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Audiowide', cursive;
+  font-size: 14px;
+  line-height: 17px;
+  color: #57FF1C;
+  left: 26.67%;
+  right: 56.67%;
+  top: 73.71%;
+  bottom: 13.52%;
+}
