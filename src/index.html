@@ -7,87 +7,47 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@600&family=Montserrat:wght@500&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Aldrich&family=Audiowide&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="LogoRio.png">
   </head>
   <body>
-   <section class="banner"><img src="LogoRio.png" id="Logo" alt="Logo"><img src="baner.png" class="banner" alt="banner"></section> 
+   <img src="banner .png" class="banner" alt="banner">
    
    <nav class="menu">
     <div class="atletas">
-      <button class="atletasbtn">Atletas</button>
+      <button class="atletasbtn">MUJERES DE ORO</button>
         <div class="atletas-content">
-          <a href="#">Nombre</a>
-          <a href="#">Edad</a>
-          <a href="#">Género</a>
-          <a href="#">Altura</a>
-          <a href="#">Peso</a>
+          <a href="#">Mujeres que ganaron mas medallas de oro</a>
         </div>
     </div>
 
     <div class="atletas">
-      <button class="atletasbtn">Países</button>
+      <button class="atletasbtn">PAISES CON MEDALLA</button>
       <div class="atletas-content">
-        <a href="#">Asia</a>
-        <a href="#">África</a>
-        <a href="#">Europa</a>
-        <a href="#">Oceania</a>
-        <a href="#">Sudamérica</a>
-        <a href="#">Norteamérica</a>
-        <a href="#">Centroamérica</a>
+        <a href="#">Lista de paises</a>
+        
       </div>
     </div>
 
     <div class="atletas">
-      <button class="atletasbtn">Deportes</button>
+      <button class="atletasbtn">DEPORTES OLIMPICOS</button>
       <div class="atletas-content">
-        <a href="">Olímpicos</a>
-          <a href="">De Invierno</a>
-          <a href="">De La Juventud</a>
-          <a href="">Paralímpicos</a>
+        <a href="">Lista de deportes</a>
+         
       </div>
     </div>
 
     <div class="atletas">
-      <button class="atletasbtn">Medallas</button>
+      <button class="atletasbtn">OLIMPIADAS</button>
       <div class="atletas-content">
-        <a href="">Oro</a>
-        <a href="">Plata</a>
-        <a href="">Bronce</a>  
+        <a href="">Links a cuentas oficiales</a>
       </div>
     </div>
   </nav>  
-
-    <!--  
-			
-        <ul>
-          <a href="">Olímpicos</a>
-          <a href="">De Invierno</a>
-          <a href="">De La Juventud</a>
-          <a href="">Paralímpicos</a>
-        </ul>
-      <li><a href="#">Medallas</a></li>
-        <ul>
-          <li><a href="">Oro</a></li>
-          <li><a href="">Plata</a></li>
-          <li><a href="">Bronce</a></li>
-        </ul>
-      <li><a href="#">Datos curiosos</a></li>
-      <button class="item">ATLETAS</button> 
-      <button class="item">PAISES</button>
-      <button class="item">DEPORTES</button>
-      <button class="item">MEDALLAS</button>
-      <button class="item">DATOS CURIOSOS</button>
-      -->
-    
-   <section class="central" id="central" style="display:block;" > 
-     <nav class="inicio">CONOCE QUE PAÍSES PARTICIPARON EN LOS JUEGOS OLÍMPICOS RÍO 2016</nav>
-     <br><button class="ok" id= "btn">VER MÁS</button>
-   </section>
-
-   <section class= "filter" id="filter" style= "display:none;">
-     <label class= "label" id= "label" >
-       <select name="country" id="country">
+  <div class="presentation">Los juegos Olímpicos de Río de Janeiro, fueron un evento multideportivo internacional, celebrado en la ciudad de Río de Janeiro, Brasil. La elección de Río marcó la primera vez que se realiza en un país sudamericano. Este evento tuvo gran acogida a nivel mundial, de todas estas personas hay un grupo que desea poder interactuar y ver la información de los atletas, los deportes olímpicos y los países que participaron.</div>
+  <section class= "filter" id="filter">
+   <label class= "label" id= "selector" >
+       <select name="countries" id="countries" class="countries">
         <option>Seleccionar país</option> 
         <option>Algeria</option>
         <option>Argentina</option>
@@ -123,7 +83,7 @@
         <option>Germany</option>
         <option>Great Britain</option>
         <option>Greece</option>
-        <option>Grenada></option>
+        <option>Grenada</option>
         <option>Hungary</option>
         <option>Individual Olympic Athletes</option>
         <option>India</option>
@@ -178,8 +138,17 @@
         <option>Vietnam</option>
        </select>
      </label>
+   <!--
+   <label class= "label" id= "selector" >
+       <select name="medal" id="medalSelect">
+        <option>Busca por medalla</option> 
+        <option>Gold</option> 
+        <option>Silver</option>
+        <option>Bronze</option>
+       </select>
+      </label> 
+      -->   
    </section>
-
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>
