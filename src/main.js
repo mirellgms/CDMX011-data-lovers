@@ -1,59 +1,57 @@
-import data from './data/athletes/athletes.js';
 import { filterByTeam } from './data.js';
+filterByTeam();
 
 const root = document.getElementById("root");
 const selectByTeam = document.getElementById("countries");
 
-data.athletes.forEach(athletas => {
-    let atleta = mostrarData(athletas)
-    root.appendChild(atleta);
-});
-
 selectByTeam.addEventListener("change", function (e) {
+    limpiar();
     let seleccioncita = (filterByTeam(e.target.value))
-    //console.log(seleccioncita)
-    mostrarData(seleccioncita);
+    seleccioncita.forEach((athletas) => {
+        root.appendChild(mostrarData(athletas));
+    });
 });
 
-
-function mostrarData(seleccion) {
-    limpiar()
+function mostrarData(atleta) {
     let card = document.createElement("div");
     card.classList.add("card");
     const names = document.createElement("p");
-        names.textContent = `Nombre: ${seleccion.name.toUpperCase()}`
+    card.classList.add("contentcard");
+    names.innerHTML = "Nombre: " + atleta.name;
     const deporte = document.createElement("p");
-        deporte.textContent = `Deporte: ${seleccion.sport}`
+    card.classList.add("contentcard");
+    deporte.innerHTML = "Deporte: " + atleta.sport;
     const evento = document.createElement("p");
-        evento.textContent = `Evento: ${seleccion.event}`
+    card.classList.add("contentcard");
+    evento.innerHTML = "Evento: " + atleta.event;
     const medalla = document.createElement("p");
-        medalla.textContent = `Medalla: ${seleccion.medal.toUpperCase()}`
+    card.classList.add("contentcard");
+    medalla.innerHTML = "Medalla: " + atleta.medal;
     const pais = document.createElement("p");
-        pais.textContent = `Pais: ${seleccion.noc}`
+    card.classList.add("contentcard");
+    pais.innerHTML = "Pais: " + atleta.noc;
     const edad = document.createElement("p");
-        edad.textContent = `Edad: ${seleccion.age} años`
+    card.classList.add("contentcard");
+    edad.innerHTML = "Edad: " + atleta.age + "años";
     const genero = document.createElement("p");
-        genero.textContent = `Genero: ${seleccion.gender}`
+    card.classList.add("contentcard");
+    genero.innerHTML = "Genero: " + atleta.gender;
     const altura = document.createElement("p");
-        altura.textContent = `Estatura: ${seleccion.height} cm`
+    card.classList.add("contentcard");
+    altura.innerHTML = "Estatura: " + atleta.height + "cm";
     const peso = document.createElement("p");
-        peso.textContent = `Peso: ${seleccion.weight} kg`
+    card.classList.add("contentcard");
+    peso.innerHTML = "Peso: " + atleta.weight + "kg";
 
     card.appendChild(names);
-    card.appendChild(deporte);
-    card.appendChild(evento);
     card.appendChild(pais);
+    card.appendChild(evento);
     card.appendChild(medalla);
-    card.appendChild(edad);
-    card.appendChild(genero);
-    card.appendChild(altura);
-    card.appendChild(peso);
     return card;
 }
 
-
-function limpiar(){
-    while(root.firstChild){
+function limpiar() {
+    while (root.firstChild) {
         root.removeChild(root.firstChild)
     }
 }

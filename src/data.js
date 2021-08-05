@@ -17,14 +17,13 @@ export const names = data.athletes
   })
  return medalData;
 }*/
-
-export function filterByTeam(countries) {
-  let dataByTeam = data.athletes.filter(function (team) {
-    if (team.team == countries) {
-      return team;
-    }
-  })
-  return dataByTeam;
+export function filterByTeam (countries){
+  let dataByTeam= data.athletes.filter(function(team){  
+ if(team.team== countries){
+   return team;
+ }
+})
+return dataByTeam;
 }
 
 

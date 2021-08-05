@@ -91,9 +91,18 @@ border-radius: 10px;
 margin: 5px;
 }
 #root{
-font-family: 'Audiowide', cursive;
-font-size: 14px;  
-color: #57FF1C;
+
+width: 100%;
+margin: 5px;
+display: flex;
+flex-wrap: wrap;
+}
+
+.contentcard{
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 14px;  
+  color: #e6ffdd;
+  margin-top: 2px;
 }
 
 /*font-family: 'Quicksand', sans-serif;*/
