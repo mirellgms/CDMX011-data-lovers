@@ -1,6 +1,7 @@
 import data from './data/athletes/athletes.js';
  
-export const names = data.athletes
+export function sortNames(data){
+  let names = data.athletes
   names.sort((a,b) => {
   if(a.name > b.name){
     return 1;
@@ -8,7 +9,8 @@ export const names = data.athletes
     return -1;
   }
     return 0;
-});
+  })
+}
 /*export function filterByMedall(){
     let medalData= names.filter(function(atlet){
    if(atlet.medal== "Gold"){
@@ -25,18 +27,3 @@ export function filterByTeam (countries){
 })
 return dataByTeam;
 }
-
-
-/*
-export let gold = names.filter((name)=>{
-  if(name.medal=== "Gold"){
-    return name;
-  }
-});
-
-export let country = names.filter((team)=>{
-  if(team.team=== "Algeria"){
-    return team;
-  }
-})
-*/
