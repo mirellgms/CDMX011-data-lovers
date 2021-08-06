@@ -9,14 +9,7 @@ export const names = data.athletes
   }
     return 0;
 });
-/*export function filterByMedall(){
-    let medalData= names.filter(function(atlet){
-   if(atlet.medal== "Gold"){
-     return atlet;
-   }
-  })
- return medalData;
-}*/
+
 export function filterByTeam (countries){
   let dataByTeam= data.athletes.filter(function(team){  
  if(team.team== countries){
@@ -26,17 +19,21 @@ export function filterByTeam (countries){
 return dataByTeam;
 }
 
+export function filterByMedal(medals){
+  let dataByMedal = data.athletes.filter(function(medal){
+    if(medal.medal== medals){
+      return medal;
+    }
+  })
+  return dataByMedal;
+}
 
-/*
-export let gold = names.filter((name)=>{
-  if(name.medal=== "Gold"){
-    return name;
-  }
-});
 
-export let country = names.filter((team)=>{
-  if(team.team=== "Algeria"){
-    return team;
-  }
-})
-*/
+export function filterBySport(sports){
+  let dataBySport = data.athletes.filter(function(sport){
+    if(sport.sport== sports){
+      return sport;
+    }
+  })
+  return dataBySport;
+}
