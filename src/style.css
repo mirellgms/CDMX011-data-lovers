@@ -63,7 +63,7 @@ font-family: 'Montserrat', sans-serif;
 font-size: 20px;
 color: #FDFB5D;
 }
-/*font-family: 'Montserrat', sans-serif;*/
+
 #countries{
 font-family: 'Aldrich', sans-serif;  
 color:#076F8F;
@@ -71,12 +71,42 @@ font-size: 27px;
 background: #B2F02E;
 border: #0D5FDB;
 border-radius: 12px;
-width: 280px;
+width: 253px;
 height:42px;
 left: 353px;
 top: 181px;
 margin: 15px;
 }
+.filter{
+  width: 100%;
+  display: flex;
+}
+.medals{
+  font-family: 'Aldrich', sans-serif;  
+  color:#076F8F;
+  font-size: 27px;
+  background: #B2F02E;
+  border: #0D5FDB;
+  border-radius: 12px;
+  width: 300px;
+  height:42px;
+  left: 353px;
+  top: 181px;
+  margin: 15px;
+  }
+  .sport{
+    font-family: 'Aldrich', sans-serif;  
+    color:#076F8F;
+    font-size: 27px;
+    background: #B2F02E;
+    border: #0D5FDB;
+    border-radius: 12px;
+    width: 302px;
+    height:42px;
+    left: 353px;
+    top: 181px;
+    margin: 15px;
+    }
 .card{
 width: 330px;
 height: 220px;
@@ -93,8 +123,22 @@ flex-wrap: wrap;
 }
 
 .contentcard{
+<<<<<<< HEAD
   font-family: 'Montserrat', sans-serif; 
   font-size: 14px;  
   color: #e6ffdd;
   margin-top: 2px;
 }
+=======
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif; 
+    color: #C4FDB0;
+    margin-top: 2px;
+    text-align: center;
+    line-height: 2;
+    background-color: #0D5FDB;
+}
+
+/*font-family: 'Quicksand', sans-serif;*/
+>>>>>>> 590b241be65688fe826c16a7113abdc7cbc6b786

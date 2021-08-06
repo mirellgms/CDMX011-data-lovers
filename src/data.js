@@ -9,6 +9,7 @@ export function sortNames(data){
     return -1;
   }
     return 0;
+<<<<<<< HEAD
   })
 }
 /*export function filterByMedall(){
@@ -19,6 +20,10 @@ export function sortNames(data){
   })
  return medalData;
 }*/
+=======
+});
+
+>>>>>>> 590b241be65688fe826c16a7113abdc7cbc6b786
 export function filterByTeam (countries){
   let dataByTeam= data.athletes.filter(function(team){  
  if(team.team== countries){
@@ -26,4 +31,27 @@ export function filterByTeam (countries){
  }
 })
 return dataByTeam;
+<<<<<<< HEAD
 }
+=======
+}
+
+export function filterByMedal(medals){
+  let dataByMedal = data.athletes.filter(function(medal){
+    if(medal.medal== medals){
+      return medal;
+    }
+  })
+  return dataByMedal;
+}
+
+
+export function filterBySport(sports){
+  let dataBySport = data.athletes.filter(function(sport){
+    if(sport.sport== sports){
+      return sport;
+    }
+  })
+  return dataBySport;
+}
+>>>>>>> 590b241be65688fe826c16a7113abdc7cbc6b786
