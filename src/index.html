@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no, maximum-scale=1.0,minimum-scale=1.0">
-    <title>Juegos Olímpicos Río 2016</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Aldrich&family=Audiowide&family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="LogoRio.png">
-  </head>
-  <body>
-   <img src="banner .png" class="banner" alt="banner">
-   
-   <nav class="menu">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,user-scalable=no, maximum-scale=1.0,minimum-scale=1.0">
+  <title>Juegos Olímpicos Río 2016</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aclonica&family=Aldrich&family=Audiowide&family=Montserrat&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="LogoRio.png">
+</head>
+
+<body>
+  <img src="./banner .png" class="banner" alt="banner">
+
+  <nav class="menu">
     <div class="atletas">
       <button class="atletasbtn">MUJERES DE ORO</button>
-        <div class="atletas-content">
-          <a href="#">Mujeres que ganaron mas medallas de oro</a>
-        </div>
+      <div class="atletas-content">
+        <a href="#">Mujeres que ganaron mas medallas de oro</a>
+      </div>
     </div>
 
     <div class="atletas">
       <button class="atletasbtn">PAISES CON MEDALLA</button>
       <div class="atletas-content">
         <a href="#">Lista de paises</a>
-        
+
       </div>
     </div>
 
@@ -33,7 +38,7 @@
       <button class="atletasbtn">DEPORTES OLIMPICOS</button>
       <div class="atletas-content">
         <a href="">Lista de deportes</a>
-         
+
       </div>
     </div>
 
@@ -43,12 +48,15 @@
         <a href="">Links a cuentas oficiales</a>
       </div>
     </div>
-  </nav>  
-  <div class="presentation">Los juegos Olímpicos de Río de Janeiro, fueron un evento multideportivo internacional, celebrado en la ciudad de Río de Janeiro, Brasil. La elección de Río marcó la primera vez que se realiza en un país sudamericano. Este evento tuvo gran acogida a nivel mundial, de todas estas personas hay un grupo que desea poder interactuar y ver la información de los atletas, los deportes olímpicos y los países que participaron.</div>
-  <section class= "filter" id="filter">
-   <label class= "label" id= "selector" >
-       <select name="countries" id="countries" class="countries">
-        <option>Seleccionar país</option> 
+  </nav>
+  <div class="presentation">Los juegos Olímpicos de Río de Janeiro, fueron un evento multideportivo internacional,
+    celebrado en la ciudad de Río de Janeiro, Brasil. La elección de Río marcó la primera vez que se realiza en un país
+    sudamericano. Este evento tuvo gran acogida a nivel mundial, de todas estas personas hay un grupo que desea poder
+    interactuar y ver la información de los atletas, los deportes olímpicos y los países que participaron.</div>
+  <section class="filter" id="filter">
+    <label class="label" id="selector">
+      <select name="countries" id="countries" class="countries">
+        <option>Seleccionar país</option>
         <option>Algeria</option>
         <option>Argentina</option>
         <option>Armenia</option>
@@ -119,7 +127,7 @@
         <option>Russia</option>
         <option>Serbia</option>
         <option>Sinapure</option>
-        <option>Slovakia</option>       
+        <option>Slovakia</option>
         <option>Slovenia</option>
         <option>South Africa</option>
         <option>Spain</option>
@@ -136,20 +144,60 @@
         <option>Uzbekistan</option>
         <option>Venezuela</option>
         <option>Vietnam</option>
-       </select>
-     </label>
-   <!--
-   <label class= "label" id= "selector" >
-       <select name="medal" id="medalSelect">
-        <option>Busca por medalla</option> 
-        <option>Gold</option> 
+      </select>
+    </label>
+
+    <label class="label" id="selector">
+      <select name="medals" id="medalSelect" class="medals">
+        <option>Seleccionar medalla</option>
+        <option>Gold</option>
         <option>Silver</option>
         <option>Bronze</option>
-       </select>
-      </label> 
-      -->   
-   </section>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+      </select>
+    </label>
+
+    <label class="label" id="selector">
+      <select name="sport" id="sport" class="sport">
+        <option>Seleccionar deporte</option>
+        <option>Athletics</option>
+        <option>Archery </option>
+        <option>Badminton</option>
+        <option>Basketball</option>
+        <option>Beach Volleyball</option>
+        <option>Boxing</option>
+        <option>Canoeing</option>
+        <option>Cycling </option>
+        <option>Diving</option>
+        <option>Equestrianism</option>
+        <option>Fencing</option>
+        <option>Football</option>
+        <option>Golf</option>
+        <option>Gymnastics </option>
+        <option>Rhythmic Gymnastic </option>
+        <option>Handball </option>
+        <option>Hokey</option>
+        <option>Water Polo</option>
+        <option>Judo</option>
+        <option>Canoeing</option>
+        <option>Modern Pentathlon</option>
+        <option>Rowing</option>
+        <option>Rugby sevens</option>
+        <option>Sailing</option>
+        <option>Shooting </option>
+        <option>Swimming</option>
+        <option>Synchronized Swimming</option>
+        <option>Table Tennis</option>
+        <option>Tennis</option>
+        <option>Trampolining</option>
+        <option>Volleyball</option>
+        <option>Weightlifting</option>
+        <option>Wrestling</option>
+
+      </select>
+    </label>
+  </section>
+  <div id="root"></div>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
