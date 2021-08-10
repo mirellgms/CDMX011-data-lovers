@@ -12,94 +12,41 @@ body{
 width: 100%;
 display: flex;
 }
-
 .menu{
 display: flex;
 margin: auto;
 }
-.atletasbtn {
+.menubtn {
 background-color: white;
 color: #B0005B;
-padding: 16px;
 font-size: 26px;
 font-family: 'Aclonica', sans-serif;
 border: none;
-width: 500px;
-max-width: 700px;
-}
-.atletas-content {
-display: none;
-position: absolute;
-background-color: white;
 width: 25%;
-box-shadow: 0px 8px 16px 0px hsl(240deg 8% 93%);
-z-index: 1;
+height: 55px;
 }
-
-.atletas-content a {
-color: #076F8F;
-font-family: 'Montserrat', sans-serif;
-font-size: 20px;
-min-width: 160px;
-text-align: center;
-padding: 12px 16px;
-text-decoration: none;
-display: block;
-}
-
-.atletas-content a:hover {
-background-color: #ddd;
-}
-
-.atletasbtn:hover .atletas-content {
-display: block;
-}
-
-.atletasbtn:hover {
-background-color: #8BF3A2;
+.menubtn:hover {
+  display: block;
+  background-color: #acf690;
 }
 .presentation{
 font-family: 'Montserrat', sans-serif; 
-font-size: 20px;
+font-size: 18px;
 color: #FDFB5D;
+align-self: center;
 }
 
-#countries{
-font-family: 'Aldrich', sans-serif;  
-color:#076F8F;
-font-size: 27px;
-background: #B2F02E;
-border: #0D5FDB;
-border-radius: 12px;
-width: 253px;
-height:42px;
-left: 353px;
-top: 181px;
-margin: 15px;
-}
 .filter{
   width: 100%;
   display: flex;
+  flex-wrap: wrap;  
+  margin: 9px;
 }
-.medals{
-  font-family: 'Aldrich', sans-serif;  
-  color:#076F8F;
-  font-size: 27px;
-  background: #B2F02E;
-  border: #0D5FDB;
-  border-radius: 12px;
-  width: 300px;
-  height:42px;
-  left: 353px;
-  top: 181px;
-  margin: 15px;
-  }
-  .sport{
+.selector{
     font-family: 'Aldrich', sans-serif;  
     color:#076F8F;
     font-size: 27px;
     background: #B2F02E;
-    border: #0D5FDB;
     border-radius: 12px;
     width: 302px;
     height:42px;
@@ -110,35 +57,59 @@ margin: 15px;
 .card{
 width: 330px;
 height: 220px;
-background: rgba(15, 103, 206, 0.7);
+background: rgba(13, 58, 124, 0.829);
 border-radius: 10px;  
 margin: 5px;
 }
 #root{
-
 width: 100%;
 margin: 5px;
 display: flex;
 flex-wrap: wrap;
 }
-
 .contentcard{
-<<<<<<< HEAD
-  font-family: 'Montserrat', sans-serif; 
-  font-size: 14px;  
-  color: #e6ffdd;
-  margin-top: 2px;
-}
-=======
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif; 
-    color: #C4FDB0;
+    font-size: 14px;
+    font-family: 'Montserrat'; 
+    color: #f6f6f6;
     margin-top: 2px;
     text-align: center;
     line-height: 2;
     background-color: #0D5FDB;
 }
-
-/*font-family: 'Quicksand', sans-serif;*/
->>>>>>> 590b241be65688fe826c16a7113abdc7cbc6b786
+@media screen and (max-width: 1000px) {
+  .menubtn {
+    font-size: 18px;
+    height: 45px;
+  }
+  .presentation{
+  font-size: 15px ;
+  }
+}
+@media screen and (max-width:570px) {
+  body{
+    background: linear-gradient(109.3deg, #088BA6 12.97%, #088BA6 35.54%, #16ADB7 60.71%, #16C9D5 84.03%);
+  }
+  .menubtn {
+    font-size: 15px;
+    height: 30px;
+  }
+  .presentation{
+  font-size: 10px ;
+  }
+  .selector{
+    font-size: 18px;
+    border-radius: 10px;
+    width: 210px;
+    height:35px;
+    margin: 7px;
+    }
+}
+@media screen and (max-width:460px) {
+  .menubtn {
+    font-size: 10px;
+    height: 30px;
+  }
+  .presentation{
+  font-size: 8px ;
+  }
+}
