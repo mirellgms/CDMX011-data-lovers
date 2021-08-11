@@ -1,10 +1,10 @@
 import data from './data/athletes/athletes.js';
-import {filterByTeam , filterByMedal, filterBySport} from './data.js';
-
+import {filterByTeam , filterByMedal, filterBySport, sort} from './data.js';
 const root = document.getElementById("root");
 const selectByTeam = document.getElementById("countries");
 const selectByMedal = document.getElementById("medalSelect");
 const selectBySport = document.getElementById("sport");
+const selectOrder= document.getElementById("sort");
 //Muestra la data en pantalla
 function mostrarData(atleta) {
     let card = document.createElement("div");
@@ -84,3 +84,10 @@ function limpiar() {
         root.removeChild(root.firstChild)
     }
 }
+selectOrder.addEventListener("change", function(e){
+    limpiar();
+    let allData=(sort(e.target.value))
+    allData.forEach((athletas)=>{
+        root.appendChild(mostrarData(athletas))
+    })
+})

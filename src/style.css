@@ -34,6 +34,7 @@ font-family: 'Montserrat', sans-serif;
 font-size: 18px;
 color: #FDFB5D;
 align-self: center;
+padding: 10px;
 }
 
 .filter{
@@ -57,7 +58,6 @@ align-self: center;
 .card{
 width: 330px;
 height: 220px;
-background: rgba(13, 58, 124, 0.829);
 border-radius: 10px;  
 margin: 5px;
 }
@@ -74,7 +74,7 @@ flex-wrap: wrap;
     margin-top: 2px;
     text-align: center;
     line-height: 1.8;
-    background-color: #0D5FDB;
+    background: rgba(13, 72, 160, 0.719);
 }
 @media screen and (max-width: 1000px) {
   .menubtn {
