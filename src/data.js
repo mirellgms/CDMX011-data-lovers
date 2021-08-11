@@ -10,17 +10,17 @@ import data from './data/athletes/athletes.js';
     return 0;
   });
   //Funcion para ordenar alfabeticamente
-export function sortAtoZ (data){
-    let nameAtoZ= data.sort((a,b)=>{
-      if (a.name>b.name){
-        return 1;
-      } else if (a.name<b.name){
-        return -1;
-      }
-      return 0;
-    })
-    return nameAtoZ;
-}
+// export function sortAtoZ (data){
+//     let nameAtoZ= data.sort((a,b)=>{
+//       if (a.name>b.name){
+//         return 1;
+//       } else if (a.name<b.name){
+//         return -1;
+//       }
+//       return 0;
+//     })
+//     return nameAtoZ;
+// }
   //filtra por equipo(pais) 
 export function filterByTeam (countries){
   let dataByTeam= data.athletes.filter(function(team){  

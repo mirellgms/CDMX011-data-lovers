@@ -10,11 +10,11 @@ function mostrarData(atleta) {
     let card = document.createElement("div");
     card.classList.add("card");
     const img = document.createElement("img")
-    img.src = "./medal.png";
+    img.src = `./${atleta.medal}.png`;
     card.classList.add("icon");
     const names = document.createElement("p");
     card.classList.add("cardName");
-    names.innerHTML = "Atleta: "+atleta.name.toUpperCase();
+    names.innerHTML = atleta.name.toUpperCase();
     const deporte = document.createElement("p");
     card.classList.add("contentcard");
     deporte.innerHTML = "Deporte: " + atleta.sport;
@@ -23,10 +23,10 @@ function mostrarData(atleta) {
     evento.innerHTML = "Evento: " + atleta.event;
     const medalla = document.createElement("p");
     card.classList.add("contentcard");
-    medalla.innerHTML = "Medalla: " + atleta.medal;
+    medalla.innerHTML =  atleta.medal;
     const pais = document.createElement("p");
     card.classList.add("contentcard");
-    pais.innerHTML = "País: " + atleta.team + " (" + atleta.noc + ")";
+    pais.innerHTML = atleta.team + " (" + atleta.noc + ")";
     const edad = document.createElement("p");
     card.classList.add("contentcard");
     edad.innerHTML = "Edad: " + atleta.age + "años";
@@ -40,19 +40,21 @@ function mostrarData(atleta) {
     card.classList.add("contentcard");
     peso.innerHTML = "Peso: " + atleta.weight + "kg";
 
-    card.appendChild(names)
+    card.appendChild(names);
     card.appendChild(img);
+    card.appendChild(medalla);
     card.appendChild(pais);
     card.appendChild(evento);
-    card.appendChild(medalla);
     return card;
 }
 //Mostrar todas las tarjetas en la primer pantalla
 data.athletes.forEach(athletas => {
     let allAthletes = (mostrarData(athletas))
       root.appendChild(allAthletes)
-  })
-//Mostrar las tarjetas por pais
+  });
+
+
+  //Mostrar las tarjetas por pais
 selectByTeam.addEventListener("change", function (e) {
     limpiar();
     let allData = (filterByTeam(e.target.value))

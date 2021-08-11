@@ -68,12 +68,12 @@ display: flex;
 flex-wrap: wrap;
 }
 .contentcard{
-    font-size: 14px;
+    font-size: 15px;
     font-family: 'Montserrat'; 
     color: #f6f6f6;
     margin-top: 2px;
     text-align: center;
-    line-height: 2;
+    line-height: 1.8;
     background-color: #0D5FDB;
 }
 @media screen and (max-width: 1000px) {
