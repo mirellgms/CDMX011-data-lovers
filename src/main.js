@@ -138,7 +138,6 @@ function mostrarDeporte(sport) {
     card.appendChild(deporte);
     card.appendChild(evento);
     card.appendChild(pais);
-    card.appendChild(medalla);
     return card;
 }
 function limpiar() {
