@@ -1,10 +1,11 @@
 import data from './data/athletes/athletes.js';
-import {filterByTeam , filterByMedal, filterBySport, sort} from './data.js';
-const root = document.getElementById("root");
+import {filterByTeam, filterByMedal, filterBySport, sorter} from './data.js';
+const datos= data.athletes
 const selectByTeam = document.getElementById("countries");
 const selectByMedal = document.getElementById("medalSelect");
 const selectBySport = document.getElementById("sport");
-const selectOrder= document.getElementById("sort");
+const selectOrder = document.getElementById("sort");
+const root= document.getElementById("root");
 //Muestra la data en pantalla
 function mostrarData(atleta) {
     let card = document.createElement("div");
@@ -47,17 +48,18 @@ function mostrarData(atleta) {
     card.appendChild(evento);
     return card;
 }
+
+
 //Mostrar todas las tarjetas en la primer pantalla
 data.athletes.forEach(athletas => {
     let allAthletes = (mostrarData(athletas))
-      root.appendChild(allAthletes)
-  });
+    root.appendChild(allAthletes)
+});
 
-
-  //Mostrar las tarjetas por pais
+//Mostrar las tarjetas por pais
 selectByTeam.addEventListener("change", function (e) {
     limpiar();
-    let allData = (filterByTeam(e.target.value))
+    let allData = (filterByTeam(datos,e.target.value))
     allData.forEach((athletas) => {
         root.appendChild(mostrarData(athletas));
     });
@@ -65,15 +67,15 @@ selectByTeam.addEventListener("change", function (e) {
 //Mostrar las tarjetas por medalla
 selectByMedal.addEventListener("change", function (e) {
     limpiar();
-    let allData = (filterByMedal(e.target.value))
+    let allData = (filterByMedal(datos,e.target.value))
     allData.forEach((athletas) => {
         root.appendChild(mostrarData(athletas));
     });
 });
 //Mostrar tarjetas por deporte elegido
 selectBySport.addEventListener("change", function (e) {
-    limpiar();
-    let allData = (filterBySport(e.target.value))
+limpiar();
+    let allData = (filterBySport(datos,e.target.value))
     allData.forEach((athletas) => {
         root.appendChild(mostrarData(athletas));
     });
@@ -84,10 +86,11 @@ function limpiar() {
         root.removeChild(root.firstChild)
     }
 }
-selectOrder.addEventListener("change", function(e){
+//Selector para ordenar de A-Z y de Z-A
+selectOrder.addEventListener("change", function (e) {
     limpiar();
-    let allData=(sort(e.target.value))
-    allData.forEach((athletas)=>{
-        root.appendChild(mostrarData(athletas))
-    })
+    let allData = (sorter(datos,e.target.value))
+    allData.forEach((athletas) => {
+    root.appendChild(mostrarData(athletas))
+    });
 })
