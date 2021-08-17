@@ -1,17 +1,12 @@
-import { filterByTeam , filterByMedal, filterBySport} from './data.js';
-
-
-const root = document.getElementById("root");
+import data from './data/athletes/athletes.js';
+import {filterByTeam, filterByMedal, filterBySport, sorter} from './data.js';
+const datos= data.athletes
 const selectByTeam = document.getElementById("countries");
-
-selectByTeam.addEventListener("change", function (e) {
-    limpiar();
-    let seleccioncita = (filterByTeam(e.target.value))
-    seleccioncita.forEach((athletas) => {
-        root.appendChild(mostrarData(athletas));
-    });
-});
-
+const selectByMedal = document.getElementById("medalSelect");
+const selectBySport = document.getElementById("sport");
+const selectOrder = document.getElementById("sort");
+const root= document.getElementById("root");
+//Muestra la data en pantalla
 function mostrarData(atleta) {
     let card = document.createElement("div");
     card.classList.add("card");
@@ -49,14 +44,26 @@ function mostrarData(atleta) {
     card.appendChild(medalla);
     return card;
 }
+//Mostrar todas las tarjetas en la primer pantalla
+data.athletes.forEach(athletas => {
+    let allAthletes = (mostrarData(athletas))
+    root.appendChild(allAthletes)
+});
 
-const selectByMedal = document.getElementById("medalSelect");
-
+//Mostrar las tarjetas por pais
+selectByTeam.addEventListener("change", function (e) {
+    limpiar();
+    let allData = (filterByTeam(datos,e.target.value))
+    allData.forEach((athletas) => {
+        root.appendChild(mostrarData(athletas));
+    });
+});
+//Mostrar las tarjetas por medalla
 selectByMedal.addEventListener("change", function (e) {
     limpiar();
-    let seleccioncita = (filterByMedal(e.target.value))
-    seleccioncita.forEach((athletas) => {
-        root.appendChild(mostrarMedalla(athletas));
+    let allData = (filterByMedal(datos,e.target.value))
+    allData.forEach((athletas) => {
+        root.appendChild(mostrarData(athletas));
     });
 });
 function mostrarMedalla(medal) {
@@ -98,10 +105,10 @@ function mostrarMedalla(medal) {
 const selectBySport = document.getElementById("sport");
 
 selectBySport.addEventListener("change", function (e) {
-    limpiar();
-    let seleccioncita = (filterBySport(e.target.value))
-    seleccioncita.forEach((athletas) => {
-        root.appendChild(mostrarDeporte(athletas));
+limpiar();
+    let allData = (filterBySport(datos,e.target.value))
+    allData.forEach((athletas) => {
+        root.appendChild(mostrarData(athletas));
     });
 });
 function mostrarDeporte(sport) {
@@ -145,3 +152,11 @@ function limpiar() {
         root.removeChild(root.firstChild)
     }
 }
+//Selector para ordenar de A-Z y de Z-A
+selectOrder.addEventListener("change", function (e) {
+    limpiar();
+    let allData = (sorter(datos,e.target.value))
+    allData.forEach((athletas) => {
+    root.appendChild(mostrarData(athletas))
+    });
+})
