@@ -37,39 +37,6 @@ align-self: center;
 padding: 10px;
 }
 
-<<<<<<< HEAD
-#countries{
-font-family: 'Aldrich', sans-serif;  
-color:#076F8F;
-font-size: 27px;
-background: #B2F02E;
-border: #0D5FDB;
-border-radius: 12px;
-width: 253px;
-height:42px;
-left: 353px;
-top: 181px;
-margin: 15px;
-}
-.filter{
-  width: 100%;
-  display: flex;
-}
-.medals{
-  font-family: 'Aldrich', sans-serif;  
-  color:#076F8F;
-  font-size: 27px;
-  background: #B2F02E;
-  border: #0D5FDB;
-  border-radius: 12px;
-  width: 300px;
-  height:42px;
-  left: 353px;
-  top: 181px;
-  margin: 15px;
-  }
-  .sport{
-=======
 .filter{
   width: 100%;
   display: flex;
@@ -77,15 +44,10 @@ margin: 15px;
   margin: 9px;
 }
 .selector{
->>>>>>> 730161165ce72cd00ed78afbfd4e78a0d57d7e64
     font-family: 'Aldrich', sans-serif;  
     color:#076F8F;
     font-size: 27px;
     background: #B2F02E;
-<<<<<<< HEAD
-    border: #0D5FDB;
-=======
->>>>>>> 730161165ce72cd00ed78afbfd4e78a0d57d7e64
     border-radius: 12px;
     width: 302px;
     height:42px;
@@ -106,16 +68,6 @@ display: flex;
 flex-wrap: wrap;
 }
 .contentcard{
-<<<<<<< HEAD
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif; 
-    color: #C4FDB0;
-    margin-top: 2px;
-    text-align: center;
-    line-height: 2;
-    background-color: #0D5FDB;
-=======
     font-size: 15px;
     font-family: 'Montserrat'; 
     color: #f6f6f6;
@@ -160,5 +112,4 @@ flex-wrap: wrap;
   .presentation{
   font-size: 8px ;
   }
->>>>>>> 730161165ce72cd00ed78afbfd4e78a0d57d7e64
 }
