@@ -48,8 +48,6 @@ function mostrarData(atleta) {
     card.appendChild(evento);
     return card;
 }
-
-
 //Mostrar todas las tarjetas en la primer pantalla
 data.athletes.forEach(athletas => {
     let allAthletes = (mostrarData(athletas))

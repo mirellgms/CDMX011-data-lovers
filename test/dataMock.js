@@ -37,7 +37,7 @@ export const mockData= [
       }
     ];
 
-export const athlet= [
+export const athletA= [
   {
     "name": "Aaron Brown",
     "gender": "M",
@@ -51,20 +51,8 @@ export const athlet= [
     "medal": "Bronze"
   }
 ];
-export const mockAtoZ= [
-  {
-    "name": "Aaron Brown",
-    "gender": "M",
-    "height": "198",
-    "weight": "79",
-    "sport": "Athletics",
-    "team": "Canada",
-    "noc": "CAN",
-    "age": 24,
-    "event": "Athletics Men's 4 x 100 metres Relay",
-    "medal": "Bronze"
-  },
-  {
+export const athletL= [
+   {
     "name": "Luc Abalo",
     "gender": "Masculino",
     "height": "182",
@@ -75,21 +63,9 @@ export const mockAtoZ= [
     "age": 31,
     "event": "Handball Men's Handball",
     "medal": "Silver"
-  },
-  {
-    "name": "Nicola Virginia Adams",
-    "gender": "F",
-    "height": "164",
-    "weight": "51",
-    "sport": "Boxing",
-    "team": "Great Britain",
-    "noc": "GBR",
-    "age": 33,
-    "event": "Boxing Women's Flyweight",
-    "medal": "Gold"
   }
 ];
-export const mockZtoA= [
+export const athletN= [
   {
     "name": "Nicola Virginia Adams",
     "gender": "F",
@@ -101,29 +77,5 @@ export const mockZtoA= [
     "age": 33,
     "event": "Boxing Women's Flyweight",
     "medal": "Gold"
-  },
-  {
-    "name": "Luc Abalo",
-    "gender": "Masculino",
-    "height": "182",
-    "weight": "86",
-    "sport": "Handball",
-    "team": "France",
-    "noc": "FRA",
-    "age": 31,
-    "event": "Handball Men's Handball",
-    "medal": "Silver"
-  },
-  {
-    "name": "Aaron Brown",
-    "gender": "M",
-    "height": "198",
-    "weight": "79",
-    "sport": "Athletics",
-    "team": "Canada",
-    "noc": "CAN",
-    "age": 24,
-    "event": "Athletics Men's 4 x 100 metres Relay",
-    "medal": "Bronze"
   }
 ];
